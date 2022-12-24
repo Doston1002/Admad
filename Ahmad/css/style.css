@@ -23,15 +23,16 @@ html{
     scroll-behavior: smooth;
 }
 .header{
-    background: var(--bg);
+    width: 100%;
+    height: 6rem;
+    background: #fff;
+    margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:1.5rem 7%;
     border-bottom: var(--border);
-    position: fixed;
-    top:0; left: 0; right: 0;
-    z-index: 1000;
+ 
 }
 .header .logo img{
     height: 6rem;
@@ -39,7 +40,11 @@ html{
 .header .navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
-    color:#fff;
+    color:#1F315F;
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
 }
 
 .header .navbar a:hover{
@@ -47,18 +52,43 @@ html{
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
-.header .icons div{
-    color:#fff;
+.header .icons .icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border:1px solid #1F315F;
+   
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 2rem;
+}
+.header .icons .icon-user::before,.header .icons .icon-search::before {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  margin: 5.5px 0;
+   
+   
+}
+.header .icons .icon-user::before{
+ color: #1F315F;
+}
+.header .icons .icon-search{
+background:#1F315F;
+border:none;
+}
+.header .icons .icon-search::before{
+  
+
+    color: #FFF;
+   
 }
 #menu-btn{
     display: none;
 }
 .header .search-form{
     position: absolute;
-    top:115%; right: 7%;
+    top:15%; right: 7%;
     background: #fff;
     width: 50rem;
     height: 5rem;
@@ -70,6 +100,7 @@ html{
 
 .header .search-form.active{
     transform: scaleY(1);
+    
 }
 .header .search-form input{
     height: 100%;
@@ -90,13 +121,86 @@ html{
 .header .search-form label:hover{
     color:var(--main-color);
 }
-@media (max-width:768px){
+
+.home{
+background:#F2F2F2;
+display:flex;
+border: 1px solid #000;
+width: 100%;
+height: calc(95vh - 6rem);
+}
+.home__left{
+    width: 50%;
+   padding: 200px 50px;
+    height: 100%;
+   
+    border: 1px solid red;
+}
+.home__left h1{
+    font-style: normal;
+
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.005em;
+
+color: #1F315F;
+}
+.home__left p{
+    font-style: normal;
+   padding: 70px 50px;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #B9BBBD;
+}
+.home__left button{
+   
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 11px 32px;
+gap: 10px;
+height: 38px;
+left: 8.33%;
+right: 78.75%;
+top: calc(50% - 38px/2 - 1703.39px);
+border:1px solid blue;
+background: #687ED4;
+border-radius: 4px;
+cursor: pointer;
+}
+.home__left button span{
+  
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.005em;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.home__right{
+    width: 50%;
+}
+.home__right img{
+   width: 100%;
+   height: 100%;
+}
+@media (max-width:920px){
     #menu-btn{
         display: inline-block;
     }
       .header .navbar{
         position: absolute;
-        top:100%; right: -100%;
+        top:10%; right: -100%;
         background: #fff;
         width: 30rem;
         height: calc(100vh - 9.5rem);
@@ -116,5 +220,8 @@ html{
     .header .search-form{
         width: 90%;
         right: 2rem;
+    }
+    .home{
+        display: inline-block;
     }
 }
