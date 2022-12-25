@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -44,27 +45,182 @@
     </header>
      </section>
 
-       <!-- header section end -->
+      
 
-       <section>
-        <div class="home">
-             <div class="home__left">
+       <section class="home">
+       <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+            <div class="home__left">
               <h1 >
                 SAFEME - сиз ва яқинларингиз хавфсизлиги гарови
               </h1>
               <p >
                 Биз сизлар учун энг сифатли ва тезкор хизматларни тақдим этамиз
               </p>
-              <button class="btn"><span> Рўйхатдан ўтиш</span></button>
+              <button type="button" class="btn btn-primary">Рўйхатдан ўтиш</button>
+          
             </div>
-            <div class="home__right">
-                <img src="./images/sections/intro_section.png" alt="">
+            </div>
+            <div class="home__right col-lg-6 col-md-12">
+                <img class="w-100" src="./images/sections/intro_section.png" alt="">
             </div>
         </div>
-       </section>
+       </div>
+         </section>
+         <section class="project">
+         <div class="container-fluid">
+        <div class="row">
+            <h1 class="project__info">
+                Нима учун айнан SafeMe ?
+            </h1>
+            <div class="col-md-6">
+                <img class="project__img" src="images/sections/intro_section2.png" alt="rasm">
+            </div>
+               <div class=" col-5">
+            <h4>
+              Лойиҳа ҳақида
+            </h4>
+            <p class="project__description">
+              2022 йилда UNICEF билан ҳамкорликда ташкил этилган мазкур лойиҳа ёшларни турли ҳил киберҳужумлардан ҳимоялаш учун мўлжалланган энг самарали  ва комплекс режалаштирилган ҳолда узлуксиз маълумотларни тақдим этади.
+            </p>
+
+            <div class="project__icons">
+              <p> <img src="./images/icons/icon.png" alt=""> <span class="icon_text">Болаларни хафлардан асраш</span></p>
+              <p> <img src="./images/icons/icon.png" alt=""> <span class="icon_text">Фойдали маълумотлар</span></p>
+              <p> <img src="./images/icons/icon.png" alt=""> <span class="icon_text">Мутахассислар фикри</span></p>
+              <p> <img src="./images/icons/icon.png" alt=""> <span class="icon_text">Ота-оналар учун маслаҳатлар</span></p>
+            </div>
+              <button type="button" class="btn btn-primary">Батафсил</button>
+          </div>
+        </div>
+       </div>
+  </section>
+
+  <section class="ourgoal">
+
+ 
+       <div class="container">
+           <h1 class="ourgoal__info"> Бизнинг мақсадимиз </h1>
+           <div class="row">
+
+           <div class="ourgoal__container ">
+          <div class="ourgoal__box  col-lg-3 col-md-6 col-sm-12">
+            <img class="ourgoal__img" src="./images/icons/account.png" alt="account">
+            <h5 class="ourgoal__title">Фарзандалар хавфсизлиги</h5>
+            <p class="ourgoal__description">Фарзандларимиз ва ёшларни турли <br> ҳил хавф ва хатарлардан асраш чора тадбирларини мунтазам олиб бориш.</p>
+          </div>
+
+          <div class="ourgoal__box col-lg-3 col-md-6 col-sm-12">
+            <img class="ourgoal__img" src="./images/icons/icon.png" alt="icon">
+            <h5 class="ourgoal__title">Фойдали маълумотлар</h5>
+            <p class="ourgoal__description">Турли ҳил ўйин ёки дастурларнинг <br> хатарли тамонларини ҳақидаги маълумотларни ёритиб бориш.</p>
+          </div>
+
+          <div class="ourgoal__box col-lg-3 col-md-6 col-sm-12">
+            <img class="weight" src="./images/icons/weight.png" alt="weight">
+            <h5 class="ourgoal__title">Касбга йўналтириш</h5>
+            <p class="ourgoal__description">Ёшларнинг бўш вақтларини маъзмунли ўтказиш ҳамда келгусидаги касби <br> ҳақида маълумотлар бериш. </p>
+          </div>
+
+          <div class="ourgoal__box col-lg-3 col-md-6 col-sm-12">
+            <img class="hucker" src="./images/icons/hucker.png" alt="hucker">
+            <h5 class="ourgoal__title">Ота оналарга маслахатлар</h5>
+            <p class="ourgoal__description">Фарзандларни назорат қилиш ҳамда <br> уларга кўмаклашиш учун зарур бўладиган тизимли маълумотларни ектказиб бериш..</p>
+          </div>
+        </div>
+        </div>
+       </div>
+
+        </section>
+
+
+        <section class="attack">
+
+       
+       <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                 <img class="attack__img" src="./images/sections/Rectangle 5.png" alt="rasm">
+            </div>
+            <div class=" col-lg-6 col-md-12">
+            <h4 class="attack__info">
+              Кибержиноятларга биргаликда
+              қарши курашамиз
+            </h4>
+            <p class="attack__desctiption">
+              Хурматли тингловчилар сизларни 2022 йил 22 июль куни соат 18:00да Кибержиноятларга биргаликда қарши курашамиз номли Онлайн тарғиботимизга таклиф этамиз. Ушбу тарғиботни ИИВ Киберхавфсизлик марказининг "YouTube"даги канали орқали кўришингиз мумкин.
+            </p>
+
+             <button type="button" class="btn btn-primary">Батафсил</button>
+          </div>
+            
+        </div>
+       </div>
+ </section>
+
+ <section class="news">
+
+ 
+       <div class="container">
+        <div class="row">
+             <h1 class="news__title">Янгиликлар ва эълонлар</h1>
+             <div class="">
+            <div class="news__card col-2">
+              <div class="news__card-img">
+                <img src="./images/sections/Rectangle 8.png" alt="">
+              </div>
+ 
+              <div class="news__card--info">
+                <h3 >Tелефонингиз бошқарувини қўлга оладиган бот пайдо бўлди.</h3>
+                <p>Ушбу мақолада марказимиз ходимлари тамонидан тайёрланган маълумотлар келтирилган.</p>
+              </div>
+            </div>
+
+            <div class="news__card col-3">
+              <div class="news__card-img">
+                <img src="./images/sections/Rectangle 8 (1).png" alt="">
+              </div>
+ 
+              <div class="news__card--info">
+                <h3 >Фирибгарлар Сизни қандай алдайди, биласизми?.</h3>
+                <p>Ушбу мақолада марказимиз ходимлари тамонидан тайёрланган маълумотлар келтирилган.</p>
+              </div>
+            </div>
+
+            <div class="news__card col-3">
+              <div class="news__card-img">
+                <img src="./images/sections/Rectangle 8 (2).png" alt="">
+              </div>
+ 
+              <div class="news__card--info">
+                <p >Сайтни бузиш ўйин эмас, жавобгарлик муқаррар!.</p>
+                <p>Ушбу мақолада марказимиз ходимлари тамонидан тайёрланган маълумотлар келтирилган.</p>
+              </div>
+            </div>
+
+            <div class="news__card col-3">
+              <div class="news__card-img">
+                <img src="./images/sections/Rectangle 8 (3).png" alt="">
+              </div>
+ 
+              <div class="news__card--info">
+                <p >Аҳолимиз билан янада яқин бўламиз. Янги лойиҳа!.</p>
+                <p>Ушбу мақолада марказимиз ходимлари тамонидан тайёрланган маълумотлар келтирилган.</p>
+              </div>
+            </div>
+             
+     
+             </div>
+        </div>
+       </div>
+</section>
 
 
 
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
 </body>
